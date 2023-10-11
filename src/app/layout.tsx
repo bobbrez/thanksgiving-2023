@@ -3,13 +3,9 @@ import { type Metadata } from "next";
 import "@/styles/tailwind.css";
 
 export const metadata: Metadata = {
-  title: {
-    template: "%s - Spencer Sharp",
-    default:
-      "Spencer Sharp - Software designer, founder, and amateur astronaut",
-  },
+  title: "Thanksgiving 2023 - Thankful Gallery",
   description:
-    "I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.",
+    "Dreading the idea of standing up in front of a table of people and needing to share on the spot? We've got you covered! Instead, we're looking to put together a 2023 Thankful Gallery. This will be filled with images from (or around) 2023 that highlight memories, people, and other things that we are thankful for.",
 };
 
 export default function RootLayout({
