@@ -1,13 +1,12 @@
 import clsx from "clsx";
 import Image from "next/image";
 
-import { Container } from "@/components/Container";
+import { Container } from "@/app/_components/Container";
 import image1 from "@/images/photos/image-1.jpg";
 import image2 from "@/images/photos/image-2.jpg";
 import image3 from "@/images/photos/image-3.jpg";
 import image4 from "@/images/photos/image-4.jpg";
 import image5 from "@/images/photos/image-5.jpg";
-import { getAllArticles } from "@/lib/articles";
 import dynamic from "next/dynamic";
 
 const ImageUploader = dynamic(() => import("./_components/ImageUploader"), {
@@ -48,8 +47,6 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4);
-
   return (
     <>
       <Container className="mt-9">
